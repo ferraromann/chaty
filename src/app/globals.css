@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(124, 58, 237, 0.16), transparent 32rem),
+    #08090d;
+  color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 640px) {
+  body { display: grid; place-items: center; padding: 16px; }
+}
+
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }

@@ -255,7 +255,7 @@ export default function Home() {
               id="nickname"
               maxLength={24}
               onChange={(event) => setDraftName(event.target.value)}
-              placeholder="Ej. Ferra"
+              placeholder="Mann Ferraro"
               value={draftName}
             />
             {error && <p className="mt-3 text-sm text-rose-400">{error}</p>}

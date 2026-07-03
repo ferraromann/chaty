@@ -236,12 +236,14 @@ export default function Home() {
   if (!nickname || !user) {
     return (
       <main className="grid min-h-dvh place-items-center px-5 py-10">
-        <section className="w-full max-w-sm rounded-[2rem] border border-white/10 bg-[#12141b]/90 p-7 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-9">
+        <div className="w-full max-w-sm">
+          <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-violet-400">MANN CHAT.</h1>
+          <section className="w-full rounded-[2rem] border border-white/10 bg-[#12141b]/90 p-7 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-9">
           <div className="mb-8 grid size-14 place-items-center rounded-2xl bg-violet-500 text-white shadow-lg shadow-violet-500/25">
             <MessageCircle size={28} strokeWidth={2.4} />
           </div>
           <p className="mb-2 text-sm font-semibold tracking-wide text-violet-400">CHATY</p>
-          <h1 className="text-3xl font-semibold tracking-tight text-white">CHAT.</h1>
+          <h2 className="text-3xl font-semibold tracking-tight text-white">CHAT.</h2>
           <p className="mt-3 leading-6 text-slate-400">Elige un nombre.</p>
 
           <form className="mt-8" onSubmit={enterChat}>
@@ -261,7 +263,8 @@ export default function Home() {
               {loading ? <LoaderCircle className="animate-spin" size={19} /> : "Entrar al chat"}
             </button>
           </form>
-        </section>
+          </section>
+        </div>
       </main>
     );
   }

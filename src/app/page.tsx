@@ -241,8 +241,8 @@ export default function Home() {
             <MessageCircle size={28} strokeWidth={2.4} />
           </div>
           <p className="mb-2 text-sm font-semibold tracking-wide text-violet-400">CHATY</p>
-          <h1 className="text-3xl font-semibold tracking-tight text-white">Entra.</h1>
-          <p className="mt-3 leading-6 text-slate-400">Elige un nombre. Sin contraseñas, sin perfiles, directo al chat.</p>
+          <h1 className="text-3xl font-semibold tracking-tight text-white">CHAT.</h1>
+          <p className="mt-3 leading-6 text-slate-400">Elige un nombre.</p>
 
           <form className="mt-8" onSubmit={enterChat}>
             <label className="text-sm font-medium text-slate-300" htmlFor="nickname">Tu nickname</label>
